@@ -1,0 +1,18 @@
+<h1>Our chat 🚀</h1>
+<blockquote>
+<p>
+<% if @question.blank? %>
+  you´re stupid, no question asked
+<% else %>
+  <%= @question %>
+<% end %>
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+<%= @answer %>
+</p>
+</blockquote>
+
+<%= link_to 'Ask a new question', ask_path %>
